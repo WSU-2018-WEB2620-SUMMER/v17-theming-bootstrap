@@ -1,0 +1,30 @@
+{
+  "name": "v17-theming_bootstrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Abdulmalek Al-Gahmi",
+  "license": "MIT",
+  "scripts": {
+    "clean": "cd dist && rm -rf * && cd -",
+    "dev": "webpack -d",
+    "watch": "webpack -d --watch",
+    "build": "webpack -p"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "babel-loader": "^7.1.4",
+    "bootstrap": "^4.1.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "jquery": "^3.3.1",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "popper.js": "^1.14.3",
+    "postcss-loader": "^2.1.5",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3"
+  }
+}

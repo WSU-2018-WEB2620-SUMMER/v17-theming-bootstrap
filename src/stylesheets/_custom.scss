@@ -1,0 +1,25 @@
+$primary: #563d7c;
+$secondary: lightgray;
+$theme-colors: (
+  "ok": blue,
+  "cancel": red
+);
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/alert";
+
+.message {
+  @extend .alert;
+  @include alert-variant(maroon, black, white);
+}
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color} {
+    box-shadow: 3px 3px theme-color-level($color, 3);
+  }
+}
